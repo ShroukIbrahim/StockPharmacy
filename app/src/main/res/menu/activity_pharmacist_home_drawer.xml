@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+<!--        <item-->
+<!--            android:id="@+id/nav_cart"-->
+<!--            android:icon="@drawable/ic_shopping_cart_black_24dp"-->
+<!--            android:title="@string/Cart" />-->
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/Profile" />
+        <item
+            android:id="@+id/nav_medications"
+            android:icon="@drawable/ic_medical_black_24dp"
+            android:title="@string/medication" />
+        <item
+            android:id="@+id/nav_points_gifts"
+            android:icon="@drawable/ic_card_giftcard_black_24dp"
+            android:title="@string/points_Gifts" />
+
+        <item
+                android:id="@+id/nav_offers"
+                android:icon="@drawable/ic_card_giftcard_black_24dp"
+                android:title="@string/offers" />
+<!--        <item-->
+<!--                android:id="@+id/nav_orders"-->
+<!--                android:icon="@drawable/ic_content_paste_black_24dp"-->
+<!--                android:title="@string/orders" />-->
+
+        <item
+            android:id="@+id/nav_stocks"
+            android:icon="@drawable/ic_store_black_24dp"
+            android:title="@string/store" />
+        <item
+            android:id="@+id/nav_terms_conditions"
+            android:icon="@drawable/ic_error_outline_black_24dp"
+            android:title="@string/terms_conditions" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/login"
+            android:title="@string/logout" />
+
+    </group>
+</menu>

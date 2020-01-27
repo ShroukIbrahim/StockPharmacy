@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pharmacy_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4xl"
+            android:layout_margin="@dimen/dim_2xl"
+            android:background="@drawable/background_of_row"
+            android:hint="@string/pharmacy_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_medium"
+            android:textColorHint="@color/colorAccent" />
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/Governorate"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/dim_4xl"-->
+        <!--            android:layout_marginStart="@dimen/dim_2xl"-->
+        <!--            android:layout_marginEnd="@dimen/dim_2xl"-->
+        <!--            android:layout_marginBottom="@dimen/dim_2xl"-->
+        <!--            android:layout_below="@id/pharmacy_name"-->
+        <!--            android:background="@drawable/background_of_row">-->
+        <!--            <ImageView-->
+        <!--                android:id="@+id/home"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentStart="true"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--                android:src="@drawable/ic_home_blue_24dp" />-->
+
+        <!--            <Spinner-->
+        <!--                android:id="@+id/pharmacy_Governorate"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--               style="@style/spinner"-->
+        <!--                android:layout_toStartOf="@id/spinner"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--                android:layout_toEndOf="@+id/home"-->
+        <!--                />-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/spinner"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentEnd="true"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--                android:src="@drawable/ic_arrow_downward_black_24dp" />-->
+
+        <!--        </RelativeLayout>-->
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/city_layout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/dim_4xl"-->
+        <!--            android:layout_marginStart="@dimen/dim_2xl"-->
+        <!--            android:layout_marginEnd="@dimen/dim_2xl"-->
+        <!--            android:layout_marginBottom="@dimen/dim_2xl"-->
+        <!--            android:layout_below="@id/Governorate"-->
+        <!--            android:background="@drawable/background_of_row"-->
+        <!--            android:orientation="horizontal">-->
+        <!--            <ImageView-->
+        <!--                android:id="@+id/homec"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentStart="true"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--                android:src="@drawable/ic_home_blue_24dp" />-->
+
+        <!--            <Spinner-->
+        <!--                android:id="@+id/pharmacy_city"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--               style="@style/spinner"-->
+        <!--                android:layout_toStartOf="@id/spiner"-->
+        <!--                android:layout_toEndOf="@id/homec"/>-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/spiner"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:layout_centerVertical="true"-->
+        <!--                android:layout_centerInParent="true"-->
+        <!--                android:src="@drawable/ic_arrow_downward_black_24dp" />-->
+        <!--        </RelativeLayout>-->
+        <TextView
+            android:id="@+id/Governorate_layoyt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4xl"
+            android:layout_below="@id/pharmacy_name"
+            android:layout_marginStart="@dimen/dim_2xl"
+            android:layout_marginEnd="@dimen/dim_2xl"
+            android:layout_marginBottom="@dimen/dim_2xl"
+            android:background="@drawable/background_of_row"
+            android:clickable="true"
+            android:paddingTop="@dimen/dim_xl"
+            android:text="@string/select_government"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/city_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4xl"
+            android:layout_below="@id/Governorate_layoyt"
+            android:layout_marginStart="@dimen/dim_2xl"
+            android:layout_marginEnd="@dimen/dim_2xl"
+            android:layout_marginBottom="@dimen/dim_2xl"
+            android:background="@drawable/background_of_row"
+            android:textSize="@dimen/text_size_medium"
+            android:clickable="true"
+            android:paddingTop="@dimen/dim_xl"
+            android:text="@string/select_city"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pharmacy_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4xl"
+            android:layout_below="@id/city_layout"
+            android:layout_marginStart="@dimen/dim_2xl"
+            android:layout_marginEnd="@dimen/dim_2xl"
+            android:background="@drawable/background_of_row"
+            android:textSize="@dimen/text_size_medium"
+            android:hint="@string/pharmacy_steert"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_15xl"
+            android:layout_below="@id/pharmacy_location"
+            android:layout_margin="@dimen/dim_xl" />
+
+
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="@dimen/dim_5xl"
+            android:layout_height="@dimen/dim_5xl"
+            android:layout_below="@id/map"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-63dp"
+            android:layout_marginEnd="29dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:src="@drawable/ic_location_on_black_24dp" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="@dimen/dim_20xl"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dim_2xl"
+            android:background="@drawable/button_style"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/Progress_Bar"
+            style="@style/StyleProgressBar"
+            android:layout_below="@id/add" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

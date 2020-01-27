@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_stock_home">
+
+    <fragment
+        android:id="@+id/nav_stock_home"
+        android:name="com.StockPharmacyProject.ui.fragments.stock.homecycle.StockHomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_stock_home" />
+
+    <fragment
+        android:id="@+id/nav_stock_profile"
+        android:name="com.StockPharmacyProject.ui.fragments.stock.homecycle.StockProfileFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_stock_profile" />
+
+    <fragment
+        android:id="@+id/nav_stock_orders"
+        android:name="com.StockPharmacyProject.ui.fragments.stock.homecycle.StockOrdersFragment"
+        android:label="@string/orders"
+        tools:layout="@layout/fragment_stock_orders" />
+
+    <fragment
+        android:id="@+id/nav_stock_offers"
+        android:name="com.StockPharmacyProject.ui.fragments.stock.homecycle.StockOffersFragment"
+        android:label="@string/offers"
+        tools:layout="@layout/fragment_stock_offers" />
+
+    <fragment
+        android:id="@+id/nav_stock_pharmacies"
+        android:name="com.StockPharmacyProject.ui.fragments.stock.homecycle.StockPharmaciesFragment"
+        android:label="@string/pharmacies"
+        tools:layout="@layout/fragment_stock_pharmacies" />
+
+    <fragment
+        android:id="@+id/nav_stock_terms_conditions"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.TermsconditionsFragment"
+        android:label="@string/terms_conditions"
+        tools:layout="@layout/fragment_terms_conditions" />
+
+    <fragment
+        android:id="@+id/nav_stock_logout"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.LogoutFragment"
+        android:label="@string/logout" />
+
+
+</navigation>

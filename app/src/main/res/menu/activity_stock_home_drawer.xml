@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_stock_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_stock_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/Profile" />
+
+        <item
+            android:id="@+id/nav_stock_offers"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/offers" />
+        <item
+            android:id="@+id/nav_stock_orders"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/orders" />
+
+        <item
+            android:id="@+id/nav_stock_pharmacies"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/pharmacies" />
+        <item
+            android:id="@+id/nav_stock_terms_conditions"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/terms_conditions" />
+
+        <item
+            android:id="@+id/nav_stock_logout"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="@string/logout" />
+
+    </group>
+</menu>

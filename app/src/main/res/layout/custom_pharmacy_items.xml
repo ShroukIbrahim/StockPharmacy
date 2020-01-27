@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/spinner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/pharmacy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_4xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_marginTop="@dimen/dim_2xl"
+        android:background="@drawable/background_of_row">
+
+        <Spinner
+            android:id="@+id/pharmacy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/spinner"
+            android:layout_toStartOf="@id/spinner"
+            />
+
+        <ImageView
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_arrow_downward_black_24dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ph_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_4xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_below="@id/pharmacy_layout"
+        android:visibility="gone"
+        android:background="@drawable/background_of_row">
+
+        <Spinner
+            android:id="@+id/city_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/spinner"
+            android:layout_toStartOf="@id/spinner2"
+            />
+
+        <ImageView
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_arrow_downward_black_24dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/go_pharmacy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/open_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_pharmacy_info"
+            android:background="@drawable/btn_background"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/dim_xl"
+            android:padding="@dimen/dim_2xl"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

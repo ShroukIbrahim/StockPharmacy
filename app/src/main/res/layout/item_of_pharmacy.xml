@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dim_xl"
+   android:background="@drawable/shape_et"
+    android:clickable="true"
+    android:id="@+id/open_pharmacy"
+    android:backgroundTint="@color/Dgray">
+
+    <LinearLayout
+        android:id="@+id/pharmacy_show_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_5xl"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/pharmacy_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+           android:layout_marginStart="@dimen/dim_xl"
+            android:padding="@dimen/dim_xl"
+            android:textSize="@dimen/dim_2xl"
+            android:text="@string/name"
+            android:clickable="true"
+            android:textColor="@color/colorAccent" />
+
+            <ImageButton
+                android:id="@+id/delete_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/delete"
+                android:clickable="true"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/ic_action_navigation_close" />
+
+        </LinearLayout>
+
+</RelativeLayout>

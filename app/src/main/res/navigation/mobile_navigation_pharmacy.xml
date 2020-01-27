@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_pharmacist_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_profile"
+            app:destination="@id/nav_profile" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_cart"
+            app:destination="@id/nav_cart" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_points_gifts"
+            app:destination="@id/nav_points_gifts" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_terms_conditions"
+            app:destination="@id/nav_terms_conditions" />
+<!--        <action-->
+<!--            android:id="@+id/action_nav_home_to_nav_orders"-->
+<!--            app:destination="@id/nav_orders" />-->
+        <action
+            android:id="@+id/action_nav_home_to_nav_logout"
+            app:destination="@id/nav_logout" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.cart.CartFragment"
+        android:label="@string/Cart"
+        tools:layout="@layout/fragment_pharmacist_cart" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.pharmacy.ProfileFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_nav_profile_info"
+            app:destination="@id/nav_profile_info" />
+        <action
+            android:id="@+id/action_nav_profile_to_nav_pharmacy_info"
+            app:destination="@id/nav_pharmacy_info" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile_info"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.pharmacy.AddPharmacyInfoFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_add_farmacy_info" />
+
+    <fragment
+        android:id="@+id/nav_pharmacy_info"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.pharmacy.EditPharmacyFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_pharmacits_edit_pharmacy" >
+
+    </fragment>
+    <fragment
+
+        android:id="@+id/nav_medications"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.MedicationsFragment"
+        android:label="@string/medication"
+        tools:layout="@layout/fragment_medications" >
+        <action
+            android:id="@+id/action_nav_medications_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_points_gifts"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.PointsGiftsFragment"
+        android:label="@string/points_Gifts"
+        tools:layout="@layout/fragment_pharmacist_points_gifts" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_orders"-->
+<!--        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.orders.OrderFragment"-->
+<!--        android:label="@string/orders"-->
+<!--        tools:layout="@layout/fragment_pharmacist_list" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_nav_orders_to_nav_orders_details"-->
+<!--            app:destination="@id/nav_orders_details" />-->
+<!--    </fragment>-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_orders_details"-->
+<!--        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.orders.OrderDetilsFragment"-->
+<!--        android:label="@string/orders"-->
+<!--        tools:layout="@layout/fragment_pharmacist_list" />-->
+    <fragment
+        android:id="@+id/nav_stocks"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.stocks.StocksFragment"
+        android:label="@string/stocks"
+        tools:layout="@layout/fragment_pharmacist_stocks" />
+    <fragment
+        android:id="@+id/nav_terms_conditions"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.TermsconditionsFragment"
+        android:label="@string/terms_conditions"
+        tools:layout="@layout/fragment_terms_conditions" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.StockPharmacyProject.ui.fragments.pharmacist.homecycle.sidemenu.LogoutFragment"
+        android:label="@string/logout" />
+
+
+</navigation>

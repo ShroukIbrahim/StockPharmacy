@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/total"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:id="@+id/total"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dim_2xl"
+        android:layout_marginEnd="@dimen/dim_2xl"
+        android:layout_marginStart="@dimen/dim_2xl"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dim_xl">
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginEnd="@dimen/dim_ss"
+                android:layout_marginStart="@dimen/dim_ss"
+                android:background="@drawable/button_style"
+                android:text="@string/confirm_order"
+                android:visibility="visible"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginEnd="@dimen/dim_ss"
+                android:layout_marginStart="@dimen/dim_ss"
+                android:background="@drawable/button_style"
+                android:text="@string/add_more"
+                android:textColor="@color/white" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+        <ProgressBar
+        android:id="@+id/Progress_Bar"
+        android:layout_centerInParent="true"
+        style="@style/StyleProgressBar" />
+
+    </RelativeLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

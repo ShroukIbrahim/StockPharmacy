@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/gray"
+    android:elevation="@dimen/dim_2xl"
+    android:padding="@dimen/dim_xl"
+    android:layout_margin="@dimen/dim_xl">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_m">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="@dimen/dim_8xl"
+            android:layout_height="@dimen/dim_8xl"
+            android:layout_marginTop="@dimen/dim_2xl"
+            android:src="@drawable/capsules"/>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_toEndOf="@+id/item_image"
+            android:text="@string/name"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_size_l"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cagliostro"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_below="@id/item_name"
+            android:layout_toEndOf="@+id/item_image"
+            android:text="@string/name"
+            android:textSize="@dimen/txt_size_s" />
+        <TextView
+            android:id="@+id/pack_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cagliostro"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_toEndOf="@+id/item_image"
+            android:text="@string/name"
+            android:layout_below="@id/company_name"
+            android:textSize="@dimen/txt_size_s" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_ss"
+            android:background="@color/colorAccent"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginTop="@dimen/dim_s"
+            android:layout_marginBottom="@dimen/dim_s"
+            android:visibility="visible"
+            android:layout_toEndOf="@+id/item_image"
+           android:layout_below="@id/pack_name" />
+
+
+        <RelativeLayout
+            android:id="@+id/add_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginTop="@dimen/dim_s"
+            android:visibility="visible"
+            android:layout_toEndOf="@+id/item_image">
+
+
+            <ImageButton
+                android:id="@+id/add_Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_ss"
+                android:layout_marginEnd="@dimen/dim_ss"
+                android:visibility="visible"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+            <TextView
+                android:id="@+id/quantity_num"
+                android:layout_width="@dimen/dim_5xl"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/add_Item"
+                android:gravity="center"
+                android:text="1"
+                android:inputType="number"
+                android:background="@drawable/background_of_row"
+                android:textColor="@color/colorAccent" />
+
+            <ImageButton
+
+                android:id="@+id/remove_Item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_ss"
+                android:layout_marginStart="@dimen/dim_ss"
+                android:visibility="visible"
+                android:layout_toEndOf="@id/quantity_num"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_remove_circle_outline_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/add_cart"
+                android:layout_width="@dimen/dim_4xl"
+                android:layout_height="@dimen/dim_4xl"
+                android:layout_alignParentEnd="true"
+                android:visibility="visible"
+                android:src="@drawable/ic_add_shopping_cart_blue_24dp"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/delete_item"
+                android:layout_width="@dimen/dim_4xl"
+                android:layout_height="@dimen/dim_4xl"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:src="@drawable/ic_action_navigation_close"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/btn_background"/>
+
+        </RelativeLayout>
+
+
+
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/dim_sss"-->
+<!--            android:layout_marginTop="@dimen/dim_sss"-->
+<!--            android:background="@color/colorAccent"-->
+<!--            android:layout_below="@id/add_layout"-->
+<!--            android:layout_marginBottom="@dimen/dim_xl" />-->
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

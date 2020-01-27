@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "589914019271",
+    "firebase_url": "https://stockpharmacy-cb095.firebaseio.com",
+    "project_id": "stockpharmacy-cb095",
+    "storage_bucket": "stockpharmacy-cb095.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589914019271:android:d13888cc7f2ac673faf5e2",
+        "android_client_info": {
+          "package_name": "com.StockPharmacyProject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589914019271-e9kiaspnhp2ahrc7vctpjkk55a4amthd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.StockPharmacyProject",
+            "certificate_hash": "467f4ca0a679765bb084e2f35957758e8ebd613b"
+          }
+        },
+        {
+          "client_id": "589914019271-4508tqrtr58nin63cqi73m9gi9bgqcsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvh8MHZ82WE6ki43y84sYKTlLPWBHmfrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589914019271-4508tqrtr58nin63cqi73m9gi9bgqcsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,183 @@
+<resources>
+    <string name="app_name">StockPharmacyProject</string>
+    <string name="pharmacist">pharmacist</string>
+    <string name="store">Store</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgetpassword">Forget Password</string>
+    <string name="register">don\'t have account?Press here</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="registerr">Register</string>
+    <string name="store_image">store image</string>
+    <string name="minimum_charger">minimum charger</string>
+    <string name="delivery_cost">delivery cost</string>
+    <string name="communication_data">Communication data</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="client_name">Name</string>
+    <string name="next">Next</string>
+    <string name="category_name">Chicken Fries Reddish</string>
+    <string name="category_price">Price</string>
+    <string name="SR">SR</string>
+    <string name="product_image">Product  Image</string>
+    <string name="add_product_image">Add Product Image</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="send">Send</string>
+    <string name="change_password">Change Password</string>
+    <string name="validation_code">Validation Code</string>
+    <string name="new_password">New Password</string>
+    <string name="status">Status</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_dec">Product Descraption</string>
+    <string name="price">Price</string>
+    <string name="offer_price">Offer Price</string>
+    <string name="time">Time</string>
+    <string name="new_order">New Order</string>
+    <string name="client_rname">Client Name</string>
+    <string name="client">Client :</string>
+    <string name="shrouk_ibrahim">Shrouk Ibrahim</string>
+    <string name="order_num">Order Number :</string>
+    <string name="order_of_num">123</string>
+    <string name="total">Total :</string>
+    <string name="address">Address :</string>
+    <string name="call">Call</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="completed_request">Completed Request</string>
+    <string name="more">More</string>
+    <string name="my_offer">Offers</string>
+    <string name="connect_us">Connect us</string>
+    <string name="about">About</string>
+    <string name="comment_review"><![CDATA[Comment&Reviews]]></string>
+    <string name="logout">Logout</string>
+    <string name="availability">availability</string>
+    <string name="get_it_now">Get it now</string>
+    <string name="full_name">Full Name</string>
+    <string name="message_content">Message content</string>
+    <string name="complaint">Complaint</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="inquiry">Inquiry</string>
+    <string name="about_us">About Us</string>
+    <string name="city">City</string>
+    <string name="region">Region</string>
+    <string name="add_comment_or_review">Add Comment Or Review</string>
+    <string name="restaurant_des">Description</string>
+    <string name="preparingtime">Preparing Time :</string>
+    <string name="minute">Minute</string>
+    <string name="special_order">Special order</string>
+    <string name="enter_your_order_here">Enter your order here</string>
+    <string name="quantity">Quantity</string>
+    <string name="sum_total">Sum Total</string>
+    <string name="restaurant_sales">Restaurant sales :</string>
+    <string name="commissions">Commissions :</string>
+    <string name="commissions_des">Please transfer 10% of the profits sold within a maximum of one month. All orders are registered on your personal account</string>
+    <string name="payments">Payments :</string>
+    <string name="residual">Residual :</string>
+    <string name="alrajhi">Al Rajhi :</string>
+    <string name="app_commision">App Commission :</string>
+    <string name="ahly">Ahly :</string>
+    <string name="sofra">Sofra App</string>
+    <string name="add_new_offer">Add New Offer</string>
+    <string name="add_offer_image">Add Offer Image</string>
+    <string name="offer_name">Offer Name</string>
+    <string name="offer_dec">Description</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="preparing_time">preparing time</string>
+    <string name="delete">Delete</string>
+    <string name="confirm_order"> Confirm Order</string>
+    <string name="add_more">Add More</string>
+    <string name="day">Day :</string>
+    <string name="order_details">Order details : </string>
+    <string name="order_price">Order Price :</string>
+    <string name="Payment_by">Payment By :</string>
+    <string name="delivery_costt">Delivery Cost :</string>
+    <string name="total_txt">Total :</string>
+    <string name="pricee">20</string>
+    <string name="add_nots">Add Nots .....</string>
+    <string name="cash">Cash</string>
+    <string name="online">Online</string>
+    <string name="name">name</string>
+    <string name="accepted">accepted</string>
+    <string name="title_activity_home_pharmacist">HomePharmacistActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="title_activity_pharmacist_home">PharmacistHomeActivity</string>
+    <string name="Cart">Cart</string>
+    <string name="Profile">Profile</string>
+    <string name="points_Gifts"><![CDATA[Points & Gifts]]></string>
+    <string name="offers">Offers</string>
+    <string name="orders">Orders</string>
+    <string name="stocks">Stores</string>
+    <string name="terms_conditions"><![CDATA[Terms&Conditions]]></string>
+    <string name="pharmacies">Pharmacies</string>
+    <string name="title_activity_stock_home">StockHomeActivity</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="or">OR</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="load_order">Load_order</string>
+    <string name="send_order">Send your order</string>
+    <string name="complete_order">Complete your order</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="medication">Medications</string>
+    <string name="search">Search for Medication</string>
+    <string name="my_pharmacies">Pharmacies List</string>
+    <string name="pharmacy_name">Pharmacy Name</string>
+    <string name="add_pharmacy_info">Add Pharmacy Information</string>
+    <string name="pharmacy_location">Pharmacy Location</string>
+    <string name="pharmacy_steert">Pharmacy Steert</string>
+
+    <string name="GPSAlertDialogTitle">تنبيه</string>
+    <string name="GPSAlertDialogMessage">برجاء تشغيل محدد المواقع</string>
+    <string name="cancel">إلغاء</string>
+    <string name="chooseloc">Choose Location</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="wait">Wait...</string>
+    <string name="select_city">Select City</string>
+    <string name="select_government">Select Governorate</string>
+
+
+    <string name="invalid_email">Email must be like this \"example@example.com\"</string>
+    <string name="invalid_phone1">Phone number must be  \ </string>
+    <string name="invalid_phone2"> Please Enter valid Phone</string>
+    <string name="invalid_confirm_password">Confirm password not match</string>
+    <string name="empty">Fields are required</string>
+    <string name="phone3">phone number must be 11 number</string>
+    <string name="weak_password">password is weak</string>
+    <string name="invalid_user_name">Username mast be more than 3 cher</string>
+    <string name="invalid_password">Password mast be more than 5 of cher and number</string>
+    <string name="invalid_brd">Please select your birthday</string>
+    <string name="invalid_last_date">Please select your last donation date</string>
+
+    <string name="error_inter_net">No internet connection, Please check your internet connection try again later</string>
+
+    <string name="open">Open</string>
+    <string name="select_pharmacy">Select Pharmacy</string>
+    <string name="reload">Reload</string>
+    <string name="no_item">We couldn\'t find anything for</string>
+    <string name="no_notification">No notification now ...</string>
+
+    <string name="please_wait">Please Wait....</string>
+
+
+
+    <string name="server_client_id">589914019271-98mqba1cig16mu0tb0o139uo8v87s9p1.apps.googleusercontent.com</string>
+</resources>

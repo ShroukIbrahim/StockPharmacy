@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <Button
+        android:id="@+id/start_activity_pharmacist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dim_8xl"
+        android:layout_marginEnd="@dimen/dim_8xl"
+        android:layout_marginTop="@dimen/dim_8xl"
+        android:background="@drawable/button_style"
+        android:text="@string/pharmacist"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/start_activity_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_activity_pharmacist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/dim_8xl"
+        android:layout_marginTop="@dimen/dim_4xl"
+        android:layout_marginEnd="@dimen/dim_8xl"
+        android:background="@drawable/button_style"
+        android:text="@string/store"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

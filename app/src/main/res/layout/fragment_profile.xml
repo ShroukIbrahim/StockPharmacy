@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_10xl"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+            android:src="@drawable/im_bg"
+            app:srcCompat="@drawable/im_bg" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="@dimen/dim_15xl"
+            android:layout_height="@dimen/dim_15xl"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-100dp"
+            android:clickable="true"
+            android:elevation="5dp"
+            android:padding="@dimen/dim_xl"
+            android:scaleType="centerCrop"
+            android:src="@drawable/man"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="3dp" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@color/create_account_bnt"
+            android:elevation="4dp"
+            android:paddingBottom="@dimen/dim_xl">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_4xl"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_ss"
+                android:text="@string/email"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_ss"
+                android:text="@string/phone_number"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+<TextView
+    android:id="@+id/txt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/profile_layout"
+    android:layout_margin="@dimen/dim_xl"
+    android:text="@string/my_pharmacies"
+    android:visibility="visible"
+    android:textColor="@color/colorAccent"
+    android:textSize="@dimen/dim_2xl"
+    />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pharmacy_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt"
+            android:layout_margin="@dimen/dim_m"
+
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_pharmacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dim_2xl"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_add_black_24dp" />
+    </RelativeLayout>
+</RelativeLayout>
